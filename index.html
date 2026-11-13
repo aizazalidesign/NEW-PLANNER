@@ -4,30 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f7f6fb">
-<meta name="description" content="Explore interactive planner previews from Nova Plans: Daylume and LifeBloom 2027.">
+<meta name="description" content="Explore interactive planner previews from Nova Plans: Daylume, LifeBloom 2027 and BloomDesk.">
 <title>Planner Previews | Nova Plans</title>
 <style>
 :root{color-scheme:light;--ink:#272543;--muted:#77758e;--line:#e9e6f1;--purple:#6655cb;--lav:#f0edff;--pink:#fff0f6;--mint:#edf8f2}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;padding:32px 18px;display:grid;place-items:center;background:linear-gradient(135deg,#f7f5ff,#fff8fb 55%,#f2faf6);color:var(--ink);font:15px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
-main{width:min(880px,100%)}
+main{width:min(1080px,100%)}
 header{text-align:center;margin:0 0 34px}
 .mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,#c8bdf8,#f2c9dd);font-size:25px;margin-bottom:12px}
 .eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:10px;font-weight:800;color:var(--purple)}
 h1{font:400 clamp(32px,6vw,48px)/1.1 Georgia,serif;margin:8px 0 12px}
 header p{color:var(--muted);max-width:570px;margin:0 auto}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .card{border:1px solid var(--line);border-radius:23px;padding:26px;background:#ffffffdf;box-shadow:0 16px 48px #31265a0b;display:flex;flex-direction:column;min-height:285px}
 .card.life{background:linear-gradient(145deg,#f0edff,#fff5fa)}
 .card.day{background:linear-gradient(145deg,#edf7ef,#fffefa)}
+.card.bloom{background:linear-gradient(145deg,#f2edff,#fff1e8)}
 .symbol{font-size:31px;margin-bottom:14px}
 h2{font:400 27px Georgia,serif;margin:0 0 8px}
 p{color:var(--muted);margin:0 0 20px}
 .meta{font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:800;color:#77718e;margin-bottom:9px}
 a.button{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;background:var(--purple);color:white;padding:13px 18px;border-radius:12px;font-weight:750}
 .day a.button{background:#286457}
+.bloom a.button{background:#7156bd}
 a.button:hover{filter:brightness(1.06)}
 footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
+@media(max-width:820px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.cards{grid-template-columns:1fr}.card{min-height:245px}body{padding:25px 14px}}
 </style>
 </head>
@@ -37,7 +40,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
 <div class="mark" aria-hidden="true">✦</div>
 <div class="eyebrow">Nova Plans · Interactive previews</div>
 <h1>Find your space to plan.</h1>
-<p>Explore the planner that fits your season of life. Open either preview below to try its features.</p>
+<p>Explore the planner that fits your season of life. Open a preview below to try its features.</p>
 </header>
 <section class="cards" aria-label="Available planner previews">
 <article class="card day">
@@ -53,6 +56,13 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
 <h2>LifeBloom 2027</h2>
 <p>An interactive life-planning space with goals, vision board, calendar, habits, finances, wellness, journal and more.</p>
 <a class="button" href="./LifeBloom-2027.html">Open LifeBloom 2027 <span aria-hidden="true">→</span></a>
+</article>
+<article class="card bloom">
+<div class="symbol" aria-hidden="true">✿</div>
+<div class="meta">Your flexible workspace</div>
+<h2>BloomDesk</h2>
+<p>A customizable workspace for tasks, habits, money, inventory, contacts and notes, with browser-based backup tools.</p>
+<a class="button" href="./BloomDesk.html">Open BloomDesk <span aria-hidden="true">→</span></a>
 </article>
 </section>
 <footer>Choose a planner above to open its interactive demo. These previews are designed for modern desktop and mobile browsers.</footer>
